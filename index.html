@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <main class="page-wrapper">
@@ -32,20 +34,32 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero-content">
-          <h1>Nikmati Tontonan Dimana Saja, dan Kapan Saja</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="2000">
+            Nikmati Tontonan Dimana Saja, dan Kapan Saja
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
             Tonton apa saja secara online dari komputer pribadi atau di
             perangkat yang terhubung ke Internet dan mendukung aplikasi Netflix,
             dan gunakan download untuk menonton saat kamu di perjalanan dan
             tidak punya koneksi Internet.
           </p>
-          <a href="#subscribe" class="button button-primary">
+          <a
+            href="#subscribe"
+            class="button button-primary"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Daftar Sekarang
           </a>
         </div>
 
         <div class="hero-image">
-          <img src="assets/Img-hero.png" alt="Spider-Man" />
+          <img
+            src="assets/Img-hero.png"
+            alt="Spider-Man"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          />
         </div>
       </section>
 
@@ -103,7 +117,66 @@
         <h2>Tonton Film, Acara TV Tak Terbatas, dan Lebih Banyak Lagi</h2>
       </section>
 
+      <!-- Popular -->
+      <section id="popular" class="section-spacing">
+        <div class="section-heading">
+          <div>
+            <h2>Film dan Acara TV</h2>
+            <h2>Populer Bulan Ini</h2>
+          </div>
+          <a href="#popular-list" class="button button-primary">
+            Lihat Semua
+          </a>
+        </div>
+
+        <div class="movie-grid" id="popular-list">
+          <article class="movie-card">
+            <img src="assets/movie1.png" alt="Peaky Blinders" />
+            <h3>Peaky Blinders</h3>
+            <p>Crime, Drama</p>
+            <div class="rating">
+              <img src="assets/star-icon.png" alt="Rating" />
+              <span>8.8/10 IMDb</span>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <img src="assets/movie2.png" alt="Spider-Man No Way Home" />
+            <h3>Spider-Man: No Way Home</h3>
+            <p>Action, Adventure, Fantasy</p>
+            <div class="rating">
+              <img src="assets/star-icon.png" alt="Rating" />
+              <span>8.8/10 IMDb</span>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <img src="assets/movie3.png" alt="Arcane League of Legends" />
+            <h3>Arcane: League of Legends</h3>
+            <p>Animation, Action, Adventure</p>
+            <div class="rating">
+              <img src="assets/star-icon.png" alt="Rating" />
+              <span>9.2/10 IMDb</span>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <img src="assets/movie4.png" alt="Joker" />
+            <h3>Joker</h3>
+            <p>Crime, Drama, Thriller</p>
+            <div class="rating">
+              <img src="assets/star-icon.png" alt="Rating" />
+              <span>8.4/10 IMDb</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <footer></footer>
     </main>
   </body>
+
+  <script>
+    AOS.init();
+  </script>
 </html>
