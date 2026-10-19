@@ -1,0 +1,132 @@
+:root {
+  --primary-black: #1a1c22;
+  --secondary-black: #1f2127;
+  --gradient-gray: #373a43;
+  --red-one: #bc0e19;
+  --red-two: #db202c;
+  --forms-purple: #c8cfec;
+  --forms-input-purple: #e1e5f5;
+  --white: #ffffff;
+  --light-gray: #cbd5e1;
+  --border-gray: #fef4f4;
+  --muted-gray: #d1d5db;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--primary-black);
+  color: var(--white);
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: var(--font-family-sans-serif);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.section-spacing {
+  padding: 180px 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--red-one), var(--red-two));
+  box-shadow: 0 10px 20px rgba(127, 29, 29, 0.65);
+  color: var(--white);
+}
+
+.button-primary:hover {
+  background: linear-gradient(315deg, var(--red-one), var(--red-two));
+}
+
+.login-button {
+  white-space: nowrap;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 0 20px;
+  }
+
+  .section-spacing {
+    padding: 60px 0;
+  }
+}
