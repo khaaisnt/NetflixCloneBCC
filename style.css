@@ -216,6 +216,28 @@ a {
   object-fit: contain;
 }
 
+/* Tagline */
+.tagline-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+.tagline-section > img {
+  width: min(100%, 530px);
+}
+
+.tagline-section h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: "Volkhov", Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .page-wrapper {
