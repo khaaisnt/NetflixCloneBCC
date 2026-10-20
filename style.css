@@ -212,6 +212,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .service-card p {
@@ -299,6 +300,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .movie-card > p {
@@ -456,6 +458,81 @@ a {
 
 .form-fields button {
   min-width: 180px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 0 16px;
+  color: var(--white);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.footer-logo {
+  width: 145px;
+  height: auto;
+}
+
+.footer-brand p {
+  max-width: 250px;
+  margin: 24px 0 0;
+  color: var(--muted-gray);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.footer-grid h3 {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.footer-grid ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-grid li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.app-downloads {
+  display: flex;
+  gap: 16px;
+}
+
+.app-downloads img {
+  width: 125px;
+  height: auto;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 0;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 24px;
 }
 
 /* Mobile */
