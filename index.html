@@ -15,6 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
+
   <body>
     <main class="page-wrapper">
       <!-- Navbar -->
@@ -172,6 +173,113 @@
         </div>
       </section>
 
+      <!-- Subscription -->
+      <section class="section-spacing subs-section" id="subscribe">
+        <h2 class="section-title">Pilih Paket yang Cocok Untukmu</h2>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-header">
+              <h3>Basic</h3>
+              <p class="price">
+                Rp 120,000
+                <span>/bulan</span>
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li>Ponsel, Tablet, Komputer, TV</li>
+              <li>No Ads</li>
+              <li>Batalkan Kapan Saja</li>
+              <li>Kualitas Video Baik</li>
+              <li>Resolusi 480p</li>
+              <li class="disabled">Resolusi 720p</li>
+              <li class="disabled">Resolusi 1080p</li>
+              <li class="disabled">Resolusi 4K+HDR</li>
+            </ul>
+
+            <button href="#subscription-form" class="button button-primary">
+              Pilih Paket
+            </button>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-header">
+              <h3>Standard</h3>
+              <p class="price">
+                Rp 153,000
+                <span>/bulan</span>
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li>Ponsel, Tablet, Komputer, TV</li>
+              <li>No Ads</li>
+              <li>Batalkan Kapan Saja</li>
+              <li>Kualitas Video Baik</li>
+              <li>Resolusi 480p</li>
+              <li>Resolusi 720p</li>
+              <li>Resolusi 1080p</li>
+              <li class="disabled">Resolusi 4K+HDR</li>
+            </ul>
+
+            <button href="#subscription-form" class="button button-primary">
+              Pilih Paket
+            </button>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-header">
+              <h3>Premium</h3>
+              <p class="price">
+                Rp 186,000
+                <span>/bulan</span>
+              </p>
+            </div>
+
+            <ul class="plan-features">
+              <li>Ponsel, Tablet, Komputer, TV</li>
+              <li>No Ads</li>
+              <li>Batalkan Kapan Saja</li>
+              <li>Kualitas Video Baik</li>
+              <li>Resolusi 480p</li>
+              <li>Resolusi 720p</li>
+              <li>Resolusi 1080p</li>
+              <li>Resolusi 4K+HDR</li>
+            </ul>
+
+            <button href="#subscription-form" class="button button-primary">
+              Pilih Paket
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section id="form" class="form-section">
+        <form class="subscribe-form" action="#" method="post">
+          <h2>
+            Berlangganan Untuk Mendapatkan Informasi Terbaru dan Menjadi Anggota
+            Kami
+          </h2>
+
+          <div class="form-fields">
+            <label class="sr-only" for="email"> Alamat email </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <button type="submit" class="button button-primary">
+              Berlangganan
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
       <footer></footer>
     </main>
   </body>

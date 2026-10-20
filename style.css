@@ -113,6 +113,18 @@ a {
   white-space: nowrap;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Navbar */
 .navbar {
   position: relative;
@@ -306,6 +318,144 @@ a {
   width: 22px;
   height: 22px;
   object-fit: contain;
+}
+
+/* Subs */
+.subs-section {
+  padding-top: 0px;
+}
+
+.subscription-section > .section-title {
+  max-width: 560px;
+  margin-bottom: 24px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.plan-card {
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 24px;
+  border-radius: 30px;
+  background: var(--secondary-black);
+  color: var(--white);
+  text-align: left;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.plan-card:hover {
+  border: 1px solid var(--border-gray);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-black),
+    var(--gradient-gray),
+    var(--secondary-black)
+  );
+  transform: scale(1.04);
+}
+
+.plan-header {
+  width: 100%;
+  text-align: center;
+}
+
+.plan-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.price {
+  margin: 24px 0;
+  color: var(--red-two);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.price span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.plan-features {
+  width: 100%;
+  flex: 1;
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+}
+
+.plan-features li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 32px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.plan-features li::before {
+}
+
+.plan-features li.disabled {
+  color: #8b8d94;
+}
+
+.plan-features li.disabled::before {
+  color: transparent;
+}
+
+/* Form */
+.form-section {
+  padding-bottom: 180px;
+}
+
+.subscribe-form {
+  padding: 48px 40px;
+  border-radius: 30px;
+  background: var(--forms-purple);
+  color: var(--primary-black);
+}
+
+.subscribe-form h2 {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.form-fields {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.form-fields input {
+  width: 345px;
+  height: 48px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  background: var(--forms-input-purple);
+  color: var(--primary-black);
+}
+
+.form-fields button {
+  min-width: 180px;
 }
 
 /* Mobile */
