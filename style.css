@@ -110,7 +110,42 @@ a {
 }
 
 .login-button {
-  white-space: nowrap;
+  background: linear-gradient(135deg, var(--red-one), var(--red-two));
+  box-shadow: 0 10px 20px rgba(127, 29, 29, 0.65);
+  color: var(--white);
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  list-style: none;
+  font-size: 24px;
+  border: none;
+  background: none;
+  color: var(--white);
+}
+
+.mobile-navigation button::-webkit-details-marker {
+  display: none;
+}
+
+.navmenu-mobile {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: 20;
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  gap: 22px;
+  background: var(--primary-black);
+}
+
+.mobile-navigation.open .navmenu-mobile {
+  display: flex;
 }
 
 .sr-only {
@@ -543,5 +578,116 @@ a {
 
   .section-spacing {
     padding: 60px 0;
+  }
+
+  .navbar-menu,
+  .login-button {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .hero-section {
+    display: block;
+    padding-top: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .section-title,
+  .tagline-section h2,
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .services-grid,
+  .movie-grid,
+  .plan-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .tagline-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 60px;
+  }
+
+  .tagline-section > img {
+    width: 100%;
+  }
+
+  .section-heading {
+    display: block;
+    text-align: center;
+  }
+
+  .section-heading .button {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .plan-card:hover {
+    transform: none;
+  }
+
+  .subscribe-form {
+    padding: 24px;
+  }
+
+  .subscribe-form h2 {
+    font-size: 16px;
+  }
+
+  .form-fields {
+    display: block;
+  }
+
+  .form-fields input,
+  .form-fields button {
+    width: 100%;
+  }
+
+  .form-fields button {
+    margin-top: 16px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0;
+  }
+
+  .footer-bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }

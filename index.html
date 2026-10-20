@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scirpt.js" defer></script>
   </head>
 
   <body>
@@ -29,7 +30,24 @@
           <a href="#popular">New &amp; Popular</a>
         </nav>
 
-        <button href="#login" class="button button-primary">Masuk</button>
+        <button href="#login" class="button login-button">Masuk</button>
+
+        <div class="mobile-navigation">
+          <button
+            class="hamburger"
+            type="button"
+            aria-label="Buka menu navigasi"
+          >
+            ☰
+          </button>
+
+          <nav class="navmenu-mobile" aria-label="Navigasi mobile">
+            <a href="#popular">Movies</a>
+            <a href="#services">TV Shows</a>
+            <a href="#popular">New &amp; Popular</a>
+            <a href="#login" class="button button-primary">Masuk</a>
+          </nav>
+        </div>
       </header>
 
       <!-- Hero -->
