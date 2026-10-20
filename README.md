@@ -1,6 +1,6 @@
 # Netflix Clone BCC By Rakha Adrian
 
-Landing page sederhana bertema Netflix menggunakan HTML, CSS, dan JavaScript.
+Landing page bertema Netflix menggunakan HTML, CSS, dan JavaScript.
 
 ## Fitur
 
@@ -25,9 +25,9 @@ Landing page sederhana bertema Netflix menggunakan HTML, CSS, dan JavaScript.
 
 ```text
 NetflixCloneBCC/
-├── assets/       # Gambar, logo, dan ikon
-├── index.html    # Struktur halaman utama
-├── style.css     # Styling dan responsive layout
-├── scirpt.js     # Interaksi hamburger menu
-└── README.md     # Dokumentasi project
+├── assets/
+├── index.html
+├── style.css
+├── scirpt.js
+└── README.md
 ```
